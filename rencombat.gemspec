@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
  s.name        = "rencombat"
- s.version     = '0.0.0'
+ s.version     = Rencombat::VERSION
  s.authors     = ["Ed Allen"]
  s.email       = ["edallen1@gmail.com"]
 

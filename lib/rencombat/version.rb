@@ -1,3 +1,3 @@
-module Rencombat.
+module Rencombat
   VERSION = '0.0.0'
 end
