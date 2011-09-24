@@ -8,4 +8,5 @@ Gem::Specification.new do |s|
  s.description = "Define some  game characters. Resolve fights. Look at the stats and figure out if the probability model sucks."
  s.homepage    = "http://github.com/edallen/rencombat"
  s.files       = Dir.glob("lib/**/*.rb")
+ s.test_files  = Dir.glob("test/**/*.rb")
 end

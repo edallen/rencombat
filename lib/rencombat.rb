@@ -1,12 +1,16 @@
 module Rencombat
  # some code...
-  def die sides
-    roll =  1 + rand(sides)
-    puts roll
-    roll
+  def self.version_string
+    "Rencombat version #{Rencombat::VERSION}"
   end
 
-  def d12
-    die 12
+  def self.included(base)
+    base.extend(ClassMethods)
+  end
+
+  module ClassMethods
+    #def bar
+    #  puts 'class method'
+    #end
   end
 end
