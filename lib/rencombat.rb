@@ -1,8 +1,10 @@
+$LOAD_PATH.push File.expand_path(".")
+require 'rencombat/version'
+require 'rencombat/dice'
+
 module Rencombat
  # some code...
-  def self.version_string
-    "Rencombat version #{Rencombat::VERSION}"
-  end
+
 
   def self.included(base)
     base.extend(ClassMethods)
