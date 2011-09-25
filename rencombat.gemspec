@@ -1,3 +1,6 @@
+$LOAD_PATH.push File.expand_path("../lib", __FILE__)
+require 'rencombat/version'
+
 Gem::Specification.new do |s|
  s.name        = "rencombat"
  s.version     = Rencombat::VERSION
