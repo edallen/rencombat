@@ -6,7 +6,7 @@ module Rencombat
     end
 
     def roll_d12
-      die 12
+      roll_die 12
     end
   end
 end
