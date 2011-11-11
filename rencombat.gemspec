@@ -12,5 +12,4 @@ Gem::Specification.new do |s|
  s.homepage    = "http://github.com/edallen/rencombat"
  s.files       = Dir.glob("lib/**/*.rb")
  s.test_files  = Dir.glob("test/**/*.rb")
- s.add_development_dependency 'rspec', '~> 2.5'
 end

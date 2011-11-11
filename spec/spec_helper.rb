@@ -1,4 +1,6 @@
-require 'rspec'
+require 'rubygems'
+require 'bundler/setup'
+
 require 'rencombat'
 
 RSpec.configure do |config|
