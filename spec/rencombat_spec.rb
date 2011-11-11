@@ -54,12 +54,16 @@ describe "the combat resolver" do
       cc.resolve(4, 6).should match "hit"
     end
 
-    #it 'rolls 2 - dice requested when request 0 or less and hits if any succeed' do
-    #
-    #end
-    #
-    #it 'rolls 2 - dice requested when request is 0 or less and misses if all fail' do
-    #
-    #end
+    it 'rolls up to 2 - dice requested when request 0 or less and hits if any succeed' do
+      cc = CombatCalculator.new()
+      cc.should_receive(:roll_d12).exactly(3).times.and_return(7,7,6)
+      cc.resolve(-1, 6).should match "hit"
+     end
+
+    it 'rolls 2 - dice requested when request is 0 or less and misses if all fail' do
+      cc = CombatCalculator.new()
+      cc.should_receive(:roll_d12).twice.and_return(7,7)
+      cc.resolve(0, 6).should match "miss"
+    end
   end
 end
